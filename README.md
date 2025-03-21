@@ -1,6 +1,6 @@
-# Link Rubber - Navigation Safety Chrome Extension
+# LinkDuck - Navigation Safety Chrome Extension
 
-Link Rubber is a Chrome extension that intercepts navigation events and checks URLs for safety before allowing browsing. It provides immediate feedback on whether a site is safe, suspicious, or unsafe.
+LinkDuck is a Chrome extension that intercepts navigation events and checks URLs for safety before allowing browsing. It provides immediate feedback on whether a site is safe, suspicious, or unsafe.
 
 ## Features
 
@@ -78,7 +78,7 @@ npm run build:all
 ## Usage
 
 1. After installing the extension, it will automatically start monitoring your navigation.
-2. When you click a link, Link Rubber will check the URL before loading it.
+2. When you click a link, LinkDuck will check the URL before loading it.
 3. A dialog will appear showing the safety status: Safe, Suspicious, or Unsafe.
 4. Choose whether to proceed to the site or cancel the navigation.
 5. Access settings and history through the extension popup or dashboard.

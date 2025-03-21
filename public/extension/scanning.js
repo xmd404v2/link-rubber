@@ -17,11 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
   log(`URL: ${originalUrl}`);
   log(`TabId: ${tabId}`);
   
-  // Display original URL being scanned
-  const urlDisplayElement = document.querySelector('#url-display');
-  if (urlDisplayElement) {
-    urlDisplayElement.innerText = originalUrl.length > 50 ? originalUrl.substring(0, 50) + '...' : originalUrl;
-  }
+  // Display original URL in both places
+  const urlDisplayElements = document.querySelectorAll('#url-display, #url-display-result');
+  urlDisplayElements.forEach(element => {
+    if (element) {
+      element.innerText = originalUrl.length > 50 ? originalUrl.substring(0, 50) + '...' : originalUrl;
+      element.title = originalUrl; // Add full URL as tooltip
+    }
+  });
   
   // Handle "proceed" button click - direct navigation
   document.getElementById('proceed-btn').addEventListener('click', () => {

@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Link Rubber - URL Safety Checker",
+  "name": "LinkDuck - URL Safety Checker",
   "version": "1.0.0",
   "description": "Checks URL safety before navigation and allows you to proceed or cancel",
   "icons": {

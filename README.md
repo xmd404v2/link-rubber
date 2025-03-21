@@ -6,7 +6,7 @@ LinkDuck is a Chrome extension that intercepts navigation events and checks URLs
 
 - **Real-time URL Scanning**: Intercepts navigation and checks URL safety before loading the page
 - **User Control**: Choose whether to proceed to a site after reviewing its safety status
-- **Modern UI**: Clean, intuitive interface built with Next.js and Shadcn UI
+- **Modern UI**: Clean, intuitive interface with dark mode design
 - **Threat Intelligence**: Integration with URL scanning APIs (URLscan.io mock implementation for MVP)
 - **Dashboard**: Web-based dashboard for extension management and settings
 
@@ -66,6 +66,28 @@ LinkDuck is a Chrome extension that intercepts navigation events and checks URLs
    - Open Chrome and navigate to `chrome://extensions/`
    - Enable "Developer mode"
    - Click "Load unpacked" and select the `dist` directory
+
+### Deployment to Vercel
+
+The dashboard can be easily deployed to Vercel:
+
+1. Install Vercel CLI (optional):
+   ```bash
+   npm install -g vercel
+   ```
+
+2. Deploy using Vercel CLI:
+   ```bash
+   vercel
+   ```
+
+3. Or deploy directly from the Vercel dashboard:
+   - Push your repository to GitHub
+   - Import the repository in Vercel dashboard
+   - Configure the deployment settings (all defaults work well)
+   - Deploy
+
+4. Vercel will automatically detect the Next.js configuration and build the dashboard.
 
 ### Building for Production
 

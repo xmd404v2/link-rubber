@@ -7,17 +7,20 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-[#1f1f23] text-[#f5f5f7]">
       <div className="container max-w-4xl mx-auto space-y-8">
-        <div className="text-center">
-          <div className="mx-auto w-16 h-16 rounded-xl overflow-hidden flex items-center justify-center mb-4 relative">
+        <div className="flex items-center justify-center gap-4 mb-4">
+          <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center relative">
             <Image 
               src="/linkduck_logo.png" 
               alt="LinkDuck Logo" 
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 64px, 64px"
+              sizes="(max-width: 768px) 48px, 48px"
             />
           </div>
-          <h1 className="text-4xl font-bold text-[#f5f5f7] mb-2">LinkDuck</h1>
+          <h1 className="text-4xl font-bold text-[#f5f5f7]">LinkDuck</h1>
+        </div>
+        
+        <div className="text-center">
           <p className="text-[#a0a0a7] max-w-lg mx-auto">
             Advanced URL safety checking for secure browsing. Protect yourself from phishing attacks and dangerous websites.
           </p>

@@ -3,6 +3,7 @@
 const nextConfig = {
   /* config options here */
   output: 'export',
+  distDir: 'out',
   swcMinify: true,
   reactStrictMode: true,
   eslint: {

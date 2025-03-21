@@ -1,14 +1,21 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-[#1f1f23] text-[#f5f5f7]">
       <div className="container max-w-4xl mx-auto space-y-8">
         <div className="text-center">
-          <div className="mx-auto w-16 h-16 rounded-xl overflow-hidden flex items-center justify-center mb-4">
-            <img src="/linkduck_logo.png" alt="LinkDuck Logo" className="w-full h-full object-cover" />
+          <div className="mx-auto w-16 h-16 rounded-xl overflow-hidden flex items-center justify-center mb-4 relative">
+            <Image 
+              src="/linkduck_logo.png" 
+              alt="LinkDuck Logo" 
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 64px, 64px"
+            />
           </div>
           <h1 className="text-4xl font-bold text-[#f5f5f7] mb-2">LinkDuck</h1>
           <p className="text-[#a0a0a7] max-w-lg mx-auto">

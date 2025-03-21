@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Settings() {
   return (
@@ -10,8 +11,14 @@ export default function Settings() {
       <div className="container max-w-4xl mx-auto space-y-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center">
-              <img src="/linkduck_logo.png" alt="LinkDuck Logo" className="w-full h-full object-cover" />
+            <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center relative">
+              <Image 
+                src="/linkduck_logo.png" 
+                alt="LinkDuck Logo" 
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 40px, 40px"
+              />
             </div>
             <h1 className="text-2xl font-bold text-[#f5f5f7]">Settings</h1>
           </div>
